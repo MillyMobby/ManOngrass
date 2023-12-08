@@ -156,8 +156,14 @@
     <ClCompile Include="Vec2f.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="bg.frag" />
+    <None Include="bg.vert" />
     <None Include="texture.frag" />
     <None Include="texture.vert" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="erba.png" />
+    <Image Include="man.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

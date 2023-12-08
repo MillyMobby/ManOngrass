@@ -9,8 +9,8 @@ void main() {
 void ManOnGrass::startAnimation() {
 	Init();
 	bg.setName("background");
-	bg.setVShader("D:/Man on grass/manOnGrass/manOnGrass/bg.vert");
-	bg.setFShader("D:/Man on grass/manOnGrass/manOnGrass/bg.frag");
+	bg.setVShader("bg.vert");
+	bg.setFShader("bg.frag");
 	/*std::cout << "path1 " << bg.getVShader();
 	std::cout << "path2 " << bg.getFShader();*/
 
@@ -40,10 +40,10 @@ void ManOnGrass::startAnimation() {
 		}
 		if (flip == true && pos_X > -1) {
 			//if (spriteInd > 14 || spriteInd < 0) { spriteInd = 0; }
-			std::cout << "sprite ind = " << spriteInd;
+			//std::cout << "sprite ind = " << spriteInd;
 			pos_X = pos_X - velocity/5;
 			spriteInd += 2 * velocity;
-			std::cout << " vado a sinistraaa \n"; 
+			//std::cout << " vado a sinistraaa \n"; 
 		}
 		else flip = false;
 		
@@ -113,7 +113,7 @@ void ManOnGrass::initBackGround() {
 
 	
 	stbi_set_flip_vertically_on_load(true);
-	_image = stbi_load("D:/grass.png", &_windowSize.width, &_windowSize.height, &_channels, 0);
+	_image = stbi_load("erba.png", &_windowSize.width, &_windowSize.height, &_channels, 0);
 
 	//init Textures
 	if (_image) {
@@ -206,7 +206,7 @@ void ManOnGrass::walk(float posX, float posY, int currentFrame) {
 
 void ManOnGrass::initTexture_man() {
 	stbi_set_flip_vertically_on_load(true);
-	_image = stbi_load("D:/man.png", &widthBG, &heightBG, &_channels, 0);
+	_image = stbi_load("man.png", &widthBG, &heightBG, &_channels, 0);
 
 	widthMan = widthBG;
 	heightMan = heightBG;

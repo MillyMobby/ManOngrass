@@ -42,5 +42,19 @@
   <ItemGroup>
     <None Include="texture.frag" />
     <None Include="texture.vert" />
+    <None Include="bg.frag">
+      <Filter>File di risorse</Filter>
+    </None>
+    <None Include="bg.vert">
+      <Filter>File di risorse</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="man.png">
+      <Filter>File di risorse</Filter>
+    </Image>
+    <Image Include="erba.png">
+      <Filter>File di risorse</Filter>
+    </Image>
   </ItemGroup>
 </Project>
